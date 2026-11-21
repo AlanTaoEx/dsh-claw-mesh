@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Claw-Mesh 设备连接",
+    "description": "把局域网里登录同一账号的 DSH 连成一张网：设备自动互相发现，每台设备单独授权，注册的 SSH 设备可按需共享，任意会话都能把任务派给另一台设备上的 Agent 执行。",
+    "detail": "docs/DETAIL.md"
+  }
+}

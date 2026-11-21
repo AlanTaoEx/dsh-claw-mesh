@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Claw-Mesh device mesh",
+    "description": "Turns the DSH instances on your LAN into one mesh: nodes that sign in with the same account discover each other, each device grants control individually, registered SSH endpoints can be shared, and any chat can dispatch an agent onto another device.",
+    "detail": "docs/DETAIL.md"
+  }
+}

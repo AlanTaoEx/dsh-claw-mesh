@@ -1,0 +1,64 @@
+{
+  "name": "dsh-claw-mesh",
+  "version": "0.4.0",
+  "description": "LAN device mesh for DeepSeek Harness: discover same-account peers, grant control per device, share SSH endpoints, and dispatch agents remotely.",
+  "type": "module",
+  "license": "MIT",
+  "author": "AlanTaoEx",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "lan",
+    "mesh",
+    "peer-to-peer",
+    "ssh",
+    "agent",
+    "remote-dispatch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanTaoEx/dsh-claw-mesh.git"
+  },
+  "homepage": "https://github.com/AlanTaoEx/dsh-claw-mesh#readme",
+  "bugs": {
+    "url": "https://github.com/AlanTaoEx/dsh-claw-mesh/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "scripts",
+    "tools",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test test/*.test.js",
+    "pack": "node scripts/pack.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
